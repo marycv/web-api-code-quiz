@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="./highscores.html">View High Scores</a>
+        <div>
+            Timer: <span id="timer">75</span>
+        </div>
+    </header>
+    <!-- Start Page -->
+    <div id="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="Start-Quiz">Start Quiz</button>
+    </div>
+    <!-- Quiz Page -->
+    <main id="main">
+        <div id="question">
+            <!-- Left empty to be fileed dynamically -->
+        </div>
+
+        <div id="answers">
+            <button data-answer="Answer A"></button>
+            <button data-answer="Answer B"></button>
+            <button data-answer="Answer C"></button>
+            <button data-answer="Answer D"></button>
+        </div>
+    </main>
+
+    
+    <!-- <div id="highscoreform">
+
+    </div> -->
+
+    <!-- <script>
+        // Get the parent element 'question'
+        var questionContainer = document.querySelector('#question');
+
+        // Attach an event listener to the parent element
+        questionContainer.addEventListener("click", function(event) {
+
+            // Reach into the targeted element
+            var clickElement = event.target;
+
+            // Verify the event target is the button
+            if (!clickElement.matches('button')) return;
+
+            // Get the answer of the clicked button
+            var answer = clickElement.dataset.answer;
+
+            console.log(answer);
+
+        }) -->
+
+
+
+    <script src="./js/game.js"></script>
+</body>
+</html>

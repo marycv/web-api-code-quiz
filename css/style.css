@@ -1,0 +1,40 @@
+body {
+    background-color: #eff5f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+header a {
+    display: inline-block;
+}
+
+header div {
+    float: right;
+}
+
+#start, #question, #answers {
+    width: 50%;
+    margin: 20px auto;
+}
+
+h1, p, #start {
+    text-align: center;
+}
+
+#answers button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2dd83;
+    border-color: #f2dd83;
+    border-radius: 5px;
+}
