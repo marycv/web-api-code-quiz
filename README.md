@@ -12,7 +12,7 @@ Mary Villoso
 ## Project Description
 This project is a timed coding quiz with multiple-choice questions, built using HTML and CSS powered by JavaScript.
 ## Preview
-
+Preview deployed page [here](https://marycv.github.io/web-api-code-quiz/)
 ## Contact
 Questions? Contact me at mcvilloso@gmail.com 
 
