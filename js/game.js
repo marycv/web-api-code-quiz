@@ -86,11 +86,12 @@ startButton.addEventListener('click', startGame);
 // var currentQuestion = questionArray[questionPosition];
 
 var answersEl = document.getElementById('answers');
-var questionEl = document.getElementbyId('question');
+var questionEl = document.getElementById('question');
 
 // Function 'displayCurrentQuestion'
 function displayCurrentQuestion() {
     let question = questionArray.question;
+    console.log(question);
 
     questionEl.textContent = questionArray.questionEl;
 
@@ -128,10 +129,6 @@ function displayCurrentQuestion() {
     // Display the next question
 
         // questionPosition++
-
-
-
-
 
 // Function 'recordHighScore'
 
