@@ -1,9 +1,8 @@
 // DECLARE 'countdown' variable
 var countdown = (0);
 
-// DECLARE the 'question' array 
+// DECLARE the 'questionArray' array 
     // DECLARE a variable to store the index in the 'question' array
-var questionPosition = 0;
 var questionArray = [
     {
         question: "Commonly used data types DO NOT include:",
@@ -51,6 +50,7 @@ function startTimer() {
 
         if(secondsLeft === 0) {
             clearInterval(timerInterval);
+            // endGame();
         }
     }, 1000);
 }
@@ -90,15 +90,22 @@ var questionEl = document.getElementById('question');
 
 // Function 'displayCurrentQuestion'
 function displayCurrentQuestion() {
-    let question = questionArray.question;
-    console.log(question);
+    questionPosition = 0;
+    currentQuestion = questionArray[questionPosition];
 
-    questionEl.textContent = questionArray.questionEl;
+    questionEl.textContent = currentQuestion.question;
 
-    for (i = 0; i < question; i++) {
-        var currentQuestion = question[i];
-        var answerList = document.querySelector('#answer' + i);
-        answerList.textContent = currentQuestion;
+    answersEl.innerHTML = '';
+
+    for (var i = 0; i < currentQuestion.answer.length; i++) {
+        // create new button for each choice
+        var choice = currentQuestion.answer[i];
+        var choiceNode = document.createElement('button');
+        choiceNode.setAttribute('class', 'choice');
+        choiceNode.setAttribute('value', choice);
+    
+        choiceNode.textContent = i + 1 + '. ' + choice;
+
     }
 }
 
