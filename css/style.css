@@ -38,3 +38,7 @@ button {
     border-color: #f2dd83;
     border-radius: 5px;
 }
+
+.hide {
+    display: none;
+}

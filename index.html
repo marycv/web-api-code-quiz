@@ -19,19 +19,19 @@
     <div id="start">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-        <button id="Start-Quiz">Start Quiz</button>
+        <button id="startQuiz">Start Quiz</button>
     </div>
     <!-- Quiz Page -->
     <main id="main">
-        <div id="question">
-            <!-- Left empty to be fileed dynamically -->
+        <div class="hide" id="question">
+            <!-- Left empty to be filed dynamically -->
         </div>
 
-        <div id="answers">
-            <button data-answer="Answer A"></button>
-            <button data-answer="Answer B"></button>
-            <button data-answer="Answer C"></button>
-            <button data-answer="Answer D"></button>
+        <div class="hide" id="answers">
+            <button class="answer" id="A" data-answer="Answer A">A</button>
+            <button class="answer" id="B" data-answer="Answer B">B</button>
+            <button class="answer" id="C" data-answer="Answer C">C</button>
+            <button class="answer" id="D" data-answer="Answer D">D</button>
         </div>
     </main>
 
